@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Notification - Astra</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div style="font-family: 'Segoe UI', sans-serif; background: linear-gradient(103.58deg, rgba(224,224,224,0.05) 10.34%, rgba(144,144,144,0.1) 83.65%); padding: 30px;">
+        <div style="max-width: 600px; margin: auto; background: #1e293b; border-radius: 14px; padding: 40px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+
+          <!-- Logo -->
+          <div style="text-align: center; margin-bottom: 25px;">
+            <img src="{{logoUrl}}" alt="Astra Protocol Logo" style="height: 60px;" />
+          </div>
+
+          <!-- Header -->
+          <div style="text-align: center; color: white; margin-bottom: 20px;">
+            <h1 style="font-size: 26px;">New Login Detected</h1>
+            <p style="color: #d1d5db; font-size: 14px;">
+              Hello {{userName}},<br />
+              A new login to your Astra account was detected.
+            </p>
+          </div>
+
+          <!-- Info Box -->
+          <div style="background: linear-gradient(90deg, #FF842D 0%, #FF2D55 100%); padding: 20px; border-radius: 10px; color: white; text-align: center;">
+            <p><strong>Time:</strong> {{time}}</p>
+            <p><strong>IP Address:</strong> {{ipAddress}}</p>
+            <p><strong>Location:</strong> {{location}}</p>
+          </div>
+
+          <p style="color: #9ca3af; font-size: 13px; text-align: center; margin-top: 30px;">
+            If this wasn't you, please reset your password immediately.
+          </p>
+
+          <div style="border-top: 1px solid #475569; padding-top: 20px; text-align: center; font-size: 12px; color: #9ca3af;">
+            {{year}} Astra Protocol. All rights reserved.
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
